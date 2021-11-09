@@ -61,38 +61,10 @@
             font-weight: bold;
             margin-top: 4px;
         }
-        .input {
-            background-color: var(--text-input-field);
-            border: none;
-            border-radius: 8px;
-            height: 32px;
-            font-size: var(--md);
-            padding: 8px;
-        }
-        input-name, .input-email, input-password {
-            margin-bottom: 22px;
-
-        }
-        .redirect-login {
-            font-size: var(--sm);
-            margin-bottom: 8px;
-        }
-        .redirect-login span {
+        .value{
             color: var(--very-light-pink);
-        }
-        .redirect-login a {
-            color: var(--hospital-green);
-            text-decoration: none;
-        }
-        .primary-button {
-            background-color: var(--hospital-green);
-            border-radius: 8px ;
-            border: none;
-            color: var(--white);
-            width: 100%;
-            cursor: pointer;
-            font-size: var(--md);
-            height: 48px;
+            font-weight: bold;
+            margin: 8px 0 32px 0;
         }
         .secondary-button {
             background-color: var(--white);
@@ -103,6 +75,10 @@
             cursor: pointer;
             font-size: var(--md);
             height: 48px;
+        }
+        .secondary-button   :hover{
+            background-color: var(--hospital-green);
+            color: var(--white);
         }
         .login-button {
             margin-top: 16px;
@@ -127,18 +103,17 @@
             <form action="/" class="form">
                 <div>
                     <label for="name" class="label">Nombre</label>
-                    <input type="text" name="" id="name" placeholder="Lo Lovely" class="input input-name">
+                    <p class="value">Lo Lovely</p>
 
                     <label for="email" class="label"> Email </label>
-                    <input type="email" name="" id="email" placeholder="lolovely@something.com" class="input input-email">
+                    <p class="value">lolovely@something.com</p>
 
                     <label for="password" class="label"> Contraseña </label>
-                    <input type="password" name="" id="password" placeholder="**********" class="input input-password">
+                    <p class="value">**********</p>
                 </div>
 
                 <div>
-                    <input type="submit" value="Registrarse" class="primary-button login-button">
-                    <span class="redirect-login">Estoy registrado <a href="#">Inicia sesion</a></span>
+                    <input type="submit" value="Editar" class="secondary-button login-button">
                 </div>
             </form>
         </div>
